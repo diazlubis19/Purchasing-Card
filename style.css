@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter&family=Montserrat:wght@500;700&family=Roboto&display=swap'); 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    width: 690px;
+    height: 530px;
+}
+
+.perfume-image {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content {
+    padding: 15px 65px 0 30px ;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+}
+
+h5 {
+    letter-spacing: 7px;
+}
+
+h5, p {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.price {
+    display: flex;
+}
+
+.big-price {
+    color: hsl(158, 36%, 37%) ;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Fraunces', serif;
+}
+
+.small-price {
+    margin: auto;
+    text-decoration-line: line-through;
+    margin-left: 25px;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 112%;
+    height: 10%;
+    border-radius: 8px;
+}
+
+.cart {
+transform: scaleX(-1);}
+
+/* footer */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin:40px 0 0 0;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width:700px) {
+        .card {
+        display: block;
+        width: 375px;
+        height: 700px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .perfume-image {
+        content: url(images/image-product-mobile.jpg);
+        width: 375px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        margin: auto;
+    }
+
+.big-price {
+    margin: 15px 5px 0px 0px;
+    padding: 0;
+}
+
+.small-price {
+    margin: 15px 0px 0px 20px;
+    padding: 0;
+}
+
+button {
+    height: 55px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.attribution {
+    display: none;
+}
+}
